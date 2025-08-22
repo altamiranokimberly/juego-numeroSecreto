@@ -39,6 +39,7 @@ function verificarIntento(){
 function condicionesIniciales(){
     asignarTextoElemento('h1', 'Juego del número secreto');
     asignarTextoElemento('p', `Indica un número del 1 al ${numMaximo} `);
+    document.getElementById('intentar').removeAttribute('disabled');
     numSecreto = generarNumSecreto();
     intentos = 1;
 }

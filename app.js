@@ -15,8 +15,8 @@ function verificarIntento(){
         asignarTextoElemento('p', `Acertaste el número en ${intentos} ${(intentos === 1 ? 'vez': 'veces')}`);
         document.getElementById('reiniciar').removeAttribute('disabled');
         document.querySelector('#intentar').setAttribute('disabled', 'true');
-    } else{
-        if (intentos >= 3) {
+    } else{//Máximo numero de intentos en 4
+        if (intentos >= 4) {
         asignarTextoElemento('p', `Se te acabaron los intentos. El número era ${numSecreto}.`);
         document.getElementById('reiniciar').removeAttribute('disabled');
         document.querySelector('#intentar').setAttribute('disabled', 'true');
